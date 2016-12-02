@@ -27,4 +27,14 @@ class Definition
   def id
     @id
   end
+
+  def self.find(id)
+    found_definition = nil
+    @@definitions.each() do |definition|
+      if definition.id().eql?(id)
+        found_definition = definition
+      end
+    end
+    found_definition
+  end
 end
