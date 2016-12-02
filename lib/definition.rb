@@ -23,4 +23,8 @@ class Definition
   def self.clear
     @@definitions = []
   end
+
+  def id
+    @id
+  end
 end

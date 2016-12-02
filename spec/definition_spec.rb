@@ -30,4 +30,10 @@ describe(Definition) do
       expect(Definition.all()).to(eq([]))
     end
   end
+
+  describe("#id") do
+    it("Will show the id for the specified definition") do
+      expect(@definition.id()).to(eq(1))
+    end
+  end
 end
