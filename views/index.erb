@@ -1,7 +1,9 @@
-<h1>Dictionary</h1>
+<h1 id="header">Dictionary</h1>
+<br><br><br>
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
+      <h2>Your Words</h2>
       <ul>
         <% @words.each() do |word| %>
         <li><a href="words/<%= word.id() %>"><%= word.word() %></a></li>
@@ -10,7 +12,8 @@
     </div>
     <div class="col-sm-4">
       <form action="/" method="post">
-        <div class="form-group">
+        <div id="word_input_form" class="form-group">
+          <h4>Enter A Word To Add To The Dictionary</h4>
           <input class="form-control" type="text" name="inputted_word" placeholder="Word">
         </div>
         <button class="btn" type="submit">Submit Your Word</button>

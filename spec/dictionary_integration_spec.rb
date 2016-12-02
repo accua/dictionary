@@ -21,8 +21,8 @@ describe("The add definition page path", {:type => :feature}) do
     expect(page).to have_content("Cat")
   end
 end
-describe("The add definition page path", {:type => :feature}) do
-  it("Takes the user to the add definition page") do
+describe("The add definition input path", {:type => :feature}) do
+  it("Adds a definition to the word selected") do
     visit('/')
     fill_in('inputted_word', :with => "Squirrel")
     click_on("Submit Your Word")
