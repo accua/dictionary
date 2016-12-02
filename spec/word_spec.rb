@@ -5,7 +5,7 @@ describe(Word) do
 
   before() do
     Word.clear()
-    @word = Word.new(:word => "dog", :definition => "Man's best friend")
+    @word = Word.new(:word => "dog")
     @word.save()
     @word2 = Word.new(:word => "cat", :definition => "Couch killing machine")
     @word2.save()
@@ -54,9 +54,9 @@ describe(Word) do
     end
   end
 
-  # describe("#add_definition") do
-  #   it("add definition to the specified word object") do
-  #     expect(@word.add_definition)
-  #   end
-  # end
+  describe("#add_definition") do
+    it("adds definition to the specified word object") do
+      expect(@word.add_definition("Man's Best Friend")).to(eq(["Man's Best Friend"]))
+    end
+  end
 end
