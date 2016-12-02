@@ -23,4 +23,11 @@ describe(Definition) do
       expect(Definition.all()).to(eq([@definition]))
     end
   end
+
+  describe(".clear") do
+    it("Will clear the global definition array") do
+      Definition.clear()
+      expect(Definition.all()).to(eq([]))
+    end
+  end
 end
