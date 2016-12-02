@@ -8,8 +8,8 @@
 
 _This webapp is called "Dictionary". The purpose of this application is to showcase my Ruby abilities up to this point in week 2 of the Ruby track at Epicodus. This webapp can:_
   1. _Will take a word input from the user and display it on the page as a link._
-    * _Input: "cat"_
-    * _Output: "cat(as link to definitions page)"_
+    * _Input: "Cat"_
+    * _Output: "Cat(as link to definitions page)"_
 
   2. _Will take the user to the definition page of the specified word._
     * _Input: "Cat"_
