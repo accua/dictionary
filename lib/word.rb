@@ -13,6 +13,9 @@ class Word
     @@words
   end
 
+  def save
+    @@words.push(self)
+  end
   # def id
   #   @id
   # end

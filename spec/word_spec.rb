@@ -24,10 +24,14 @@ describe(Word) do
       expect(Word.all()).to(eq([]))
     end
   end
-  # describe("#save") do
-  #   it("saves the word object to the words array")
-  #   expect(Words)
-  # end
+
+  describe("#save") do
+    it("saves the word object to the words array") do
+    @word.save()
+    expect(Word.all()).to(eq([@word]))
+    end
+  end
+
 #
 #   describe("#id") do
 #     it("returns the id of the word")
