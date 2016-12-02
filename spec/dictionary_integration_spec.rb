@@ -32,3 +32,14 @@ describe("The add definition page path", {:type => :feature}) do
     expect(page).to have_content("Gatherer")
   end
 end
+
+describe("The home path", {:type => :feature}) do
+  it("Takes the user to the index page") do
+    visit('/')
+    fill_in('inputted_word', :with => "Fox")
+    click_on("Submit Your Word")
+    click_on("Fox")
+    click_on("Home")
+    expect(page).to have_content("Dictionary")
+  end
+end
