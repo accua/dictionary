@@ -16,4 +16,11 @@ describe(Definition) do
       expect(Definition.all()).to(eq([]))
     end
   end
+
+  describe("#save") do
+    it("Will save a definition to the array") do
+      @definition.save()
+      expect(Definition.all()).to(eq([@definition]))
+    end
+  end
 end
